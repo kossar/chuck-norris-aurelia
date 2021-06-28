@@ -1,0 +1,24 @@
+<import from="../components/simpletable-element"/>
+
+<h1 class="display-4 text-center mt-5 mb-5">History of Chuck</h1>
+<table class="table table-dark shadow-lg mb-5 rounded">
+    <thead>
+        <tr>
+            <th>Joke number</th>
+            <th>
+                Jokes in History category
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr repeat.for="item of data">
+            <th scope="row">${data.indexOf(item) + 1}</th>
+            <td>
+                ${item.value}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<simpletable-element data.bind="appState.getJokes($this.CATEGORY)" category.one-time="$this.CATEGORY"></simpletable-element>

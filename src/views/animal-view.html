@@ -1,0 +1,8 @@
+<import from="../components/carousel-container"/>
+<import from="../components/simpletable-element"/>
+
+<h1 class="display-4 text-center mt-5 mb-5">Chuck and his Animals</h1>
+
+<carousel-container></carousel-container>
+
+<simpletable-element data.bind="appState.getJokes($this.CATEGORY)" category.one-time="$this.CATEGORY"></simpletable-element>

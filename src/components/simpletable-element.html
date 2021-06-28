@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Previous Jokes in ${category.toUpperCase()} Category
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr repeat.for="item of data">
+            <td>
+                ${item.value}
+            </td>
+        </tr>
+    </tbody>
+</table>

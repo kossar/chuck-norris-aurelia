@@ -1,0 +1,8 @@
+<import from="../components/joke-element"/>
+<import from="../components/simpletable-element"/>
+
+<h1 class="display-4 text-center mt-5 mb-5">Chuck Norris as Politician</h1>
+<joke-element repeat.for="item of data" item.bind="item" item-no.bind="data.indexOf(item)" > </joke-element>
+
+
+<simpletable-element data.bind="appState.getJokes($this.CATEGORY)" category.one-time="$this.CATEGORY"></simpletable-element>
